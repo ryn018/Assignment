@@ -5,6 +5,8 @@
     <title>signup</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
 
@@ -32,20 +34,36 @@
             </nav>
 
             </header>
-        <div class = "display-4 bg-warning text-sm-center">Signup to us</div>
+        <div class = "display-4 bg-warning text-sm-center">Signin to us</div>
 
-        <form>
+        <form onsubmit = "return validate()" action = index.html>
             <div class="mb-3">
                 <label class="form-label" for="inputname">Name</label>
                 <input type="text" class="form-control" id="inputName" placeholder="Name">
             </div>
+            <div>
+              <span id = "namev"></span>
+            </div>
             <div class="mb-3">
                 <label class="form-label" for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div>
+
+              <label class="form-label" for="inputEmail">Phone</label>
+              <input type="number" class="form-control" id="phone" placeholder="phone">
+              
+
+            </div>
+            <div>
+              <span id = "emailv"></span>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div>
+              <span id = "pass"></span>
             </div>
             <div class="mb-3">
                 <div class="form-check">
@@ -58,8 +76,11 @@
         </form>
 
     </div>
-    
+
     <script src = "signup.js"></script>
+
+
+    
 
     
     
